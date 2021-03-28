@@ -8,5 +8,5 @@ if __name__ == '__main__':
             line = line.strip()
             match = re.match(r'<word>(.+)</word>', line)
             if match:
-                print match.group(1)
+                print (match.group(1))
         

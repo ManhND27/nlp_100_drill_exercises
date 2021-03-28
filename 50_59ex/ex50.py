@@ -33,7 +33,7 @@ def unit_test():
 
 if __name__ == '__main__':
     os.system('cls' if os.name == 'nt' else 'clear')
-    with open('../../data/nlp.txt', 'rU') as f:
+    with open('../data/nlp.txt', 'rU') as f:
         for line in f:
             line = line.strip()
             if line == '':

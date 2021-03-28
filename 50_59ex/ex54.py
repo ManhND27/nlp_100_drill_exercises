@@ -2,7 +2,6 @@ from xml.dom import minidom
 import os
 import sys
 
-# Reference: http://www.diveintopython.net/xml_processing/searching.html
 if __name__ == '__main__':
     xmldoc = minidom.parse('../../data/nlp.txt.xml')
     token_list = xmldoc.getElementsByTagName('token')

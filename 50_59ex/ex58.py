@@ -47,4 +47,4 @@ if __name__ == '__main__':
             oid = tuples[pid]['dobj']
             subject = tokens[sid]
             purpose = tokens[oid]
-            print '\t'.join([subject, predicate, purpose])
+            print ('\t'.join([subject, predicate, purpose]))

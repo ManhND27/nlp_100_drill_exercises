@@ -12,7 +12,7 @@ def get_mention_txt(rep_node):
     return txt
 
 if __name__ == '__main__':
-    xmldoc = minidom.parse('../../data/nlp.txt.xml')
+    xmldoc = minidom.parse('../data/nlp.txt.xml')
     root_coref  = xmldoc.getElementsByTagName('coreference')[0]
     coref_nodes = root_coref.getElementsByTagName('coreference')
 
@@ -22,4 +22,4 @@ if __name__ == '__main__':
         rep_txt = get_mention_txt(rep_node)
         for mm in mention_nodes[1:]:
             txt = get_mention_txt(mm)
-            print '%s (%s)' % (txt, rep_txt)
+            print ('%s (%s)' % (txt, rep_txt))
